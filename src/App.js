@@ -1,12 +1,26 @@
 import './scss/main.scss';
 
+import Navbar from './components/Navbar';
+import Banner from './components/Banner';
+import CollectionOne from './components/CollectionOne';
+import CarouselCard from './components/CarouselCard';
+import SeasonShow from './components/SeasonShow';
+import LatestBanner from './components/LatestBanner';
+import SocialBanner from './components/SocialBanner';
+import Footer from './components/Footer';
+
 function App() {
   return (
-    <div>
-      <h1>SPRING SUMMER 2022 SHOW</h1>
-      <h1>New Arrivals</h1>
-      <h2>New Arrivals</h2>
-      <h3>We Are Here To Outfit The World's Most Ambitious People.</h3>
+    <div className='wrapper'>
+      <Navbar />
+      <Banner />
+      <CollectionOne />
+      <CarouselCard />
+      <SeasonShow />
+      <LatestBanner />
+      <CarouselCard />
+      <SocialBanner />
+      <Footer />
     </div>
   );
 }
