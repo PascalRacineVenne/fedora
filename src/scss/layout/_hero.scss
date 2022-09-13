@@ -1,7 +1,7 @@
 .hero {
   margin: 0 1rem;
   // background-image: url('../../images/allef-vinicius--eKbU_bOF9g-unsplash.jpg');
-  background-image: url('/images/allef-vinicius--eKbU_bOF9g-unsplash.jpg');
+  background-image: url('../../images/allef-vinicius--eKbU_bOF9g-unsplash.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -21,7 +21,7 @@
   .left-banner {
     font-family: 'Jomhuria';
     letter-spacing: 16px;
-    font-size: 140px;
+    font-size: $text-title-huge;
     line-height: 140px;
     .border-text {
       font-weight: lighter;
