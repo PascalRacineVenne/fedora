@@ -1,0 +1,39 @@
+.hero {
+  margin: 0 1rem;
+  // background-image: url('../../images/allef-vinicius--eKbU_bOF9g-unsplash.jpg');
+  background-image: url('/images/allef-vinicius--eKbU_bOF9g-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+}
+
+.banner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 1rem 3.75rem;
+  color: $white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  .left-banner {
+    font-family: 'Jomhuria';
+    letter-spacing: 16px;
+    font-size: 140px;
+    line-height: 140px;
+    .border-text {
+      font-weight: lighter;
+      -webkit-text-stroke: 2px $white;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .right-banner {
+    height: 100px;
+    width: 214px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2.25rem;
+  }
+}
