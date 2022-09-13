@@ -1,0 +1,38 @@
+.navbar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.25rem 1.125rem;
+  ul {
+    font-weight: 900;
+    font-size: $text-size-small;
+  }
+}
+
+.nav-left {
+  width: 30%;
+  padding: 4px;
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    li {
+      padding-right: 4.125rem;
+    }
+  }
+}
+.nav-right {
+  width: 30%;
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    li {
+      padding-left: 3.25rem;
+    }
+  }
+}
+
+.title {
+  font-family: 'Oi-regular';
+  font-size: $text-size-large;
+}

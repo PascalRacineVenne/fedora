@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <div className='nav nav-left'>
+      <div className='nav-left'>
         <ul>
           <li>
             <a href='/#' alt='shop'>
@@ -20,8 +20,8 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className='nav nav-center title'>fedora</div>
-      <div className='nav nav-right'>
+      <div className='nav-center title'>fedora</div>
+      <div className='nav-right'>
         <ul>
           <li>
             <a href='/#' alt='account'>
