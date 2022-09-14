@@ -1,16 +1,29 @@
 .social-banner {
+  margin-top: 200px;
   height: 90vh;
   background-color: $lightGray;
-  // display: grid;
-  // place-items: center;
+  display: grid;
+  place-items: center;
   position: relative;
   .social-text {
-    // grid-area: f;
-    width: 40%;
+    width: 50%;
     font-family: $body-font-bold;
-    font-size: $text-title-normal;
+    font-size: $text-title-big;
     text-align: center;
   }
+  .social-link {
+    display: flex;
+    justify-content: center;
+    font-family: $body-font-primary;
+    font-size: $text-size-base;
+    padding: 3rem;
+    gap: 1rem;
+    letter-spacing: -1px;
+  }
+}
+
+.social-icon {
+  width: $text-size-medium;
 }
 
 .social-img {
@@ -18,30 +31,51 @@
   width: 100%;
   height: 100%;
   display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
-    'a . . . b .'
-    '. . . . . c'
-    'd . . . e .';
+    '. a a . . . . . . . . b b . . .'
+    '. . . . . . . . . . . . . c c .'
+    '. d d . . . . . . . . . . c c .'
+    '. d d . . . . . . . e e . . . .';
 }
 
 .social-img img {
-  width: 150px;
+  position: absolute;
+  width: 250px;
 }
 
 .social-img img:nth-of-type(1) {
+  // position: absolute;
   grid-area: a;
+  width: 200px;
+  object-fit: contain;
+  top: -120px;
+  left: 100px;
 }
 .social-img img:nth-of-type(2) {
   grid-area: b;
+  height: 300px;
+  object-fit: cover;
+  top: -60px;
 }
 .social-img img:nth-of-type(3) {
   grid-area: c;
-  margin-right: 1rem;
+  height: 250px;
+  object-fit: cover;
+  top: 80px;
+  // margin-right: 1rem;
 }
 .social-img img:nth-of-type(4) {
   grid-area: d;
-  margin-left: 1rem;
+  top: 54px;
+  left: -64px;
+  height: 260px;
+  object-fit: cover;
 }
 .social-img img:nth-of-type(5) {
   grid-area: e;
+  height: 260px;
+  object-fit: cover;
+  top: -20px;
 }

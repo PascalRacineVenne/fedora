@@ -1,13 +1,17 @@
 const SocialBanner = () => {
   return (
     <div className='social-banner'>
-      {/* <div className='social-text'>
+      <div className='social-text'>
         <h3>SHARE YOUR FAVORITE LOOK, GET INSPIRED.</h3>
         <div className='social-link'>
-          <i></i>
+          <img
+            className='social-icon'
+            src='/icons/instagram.png'
+            alt='insta-logo'
+          />
           <a href='/#'>INSTAGRAM</a>
         </div>
-      </div> */}
+      </div>
       <div className='social-img'>
         <img src='/images/clem-onojeghuo-4NAG83bhe6c-unsplash.jpg' alt='img1' />
         <img src='/images/clem-onojeghuo-HhaV2XXZN18-unsplash.jpg' alt='img2' />
