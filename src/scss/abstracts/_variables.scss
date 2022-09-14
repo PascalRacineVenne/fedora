@@ -1,11 +1,13 @@
 // Color Variables
 $darkGrey: #2b2b2e;
 $gray: #bebebd;
-$lightGray: #fdfdfa;
+$lightGray: #f5f3ef;
 $white: #fff;
 
 // Font Family Variables
-
+$body-font-primary: 'Chivo';
+$body-font-bold: 'BowlbyOneSC';
+$body-font-regular: 'BowlbyOne';
 // Font Size Variables
 
 $text-size-base: 18px;
@@ -15,7 +17,9 @@ $text-size-medium: $text-size-base;
 $text-size-big: calc($text-size-base + 4px);
 $text-size-large: calc($text-size-base + 6px);
 $text-size-huge: calc($text-size-base + 12px);
-$text-title-huge: calc($text-size-base + 122px);
+$text-title-normal: calc($text-size-base + 30px);
+$text-title-big: calc($text-size-base + 46px);
+$text-title-huge: calc($text-size-base + 56px);
 
 $text-size-scaler: 10vw;
 

@@ -6,11 +6,23 @@ const CollectionOne = () => {
         <h3>FOR YOUR ESSENTIAL STYLE</h3>
       </div>
       <div className='coll-display'>
-        <img src='' alt='style' />
-        <img src='' alt='style' />
-        <img src='' alt='style' />
+        <img
+          className='essential'
+          src='/images/jasmin-chew-IvqEWtgttXI-unsplash.jpg'
+          alt='style'
+        />
+        <img
+          className='essential'
+          src='/images/michael-c-zVycYmcblDY-unsplash.jpg'
+          alt='style'
+        />
+        <img
+          className='essential'
+          src='/images/rayul-_M6gy9oHgII-unsplash.jpg'
+          alt='style'
+        />
         <div className='coll-description'>
-          <h5>Never Before Freedom To Choose</h5>
+          <h3>Never Before Freedom To Choose</h3>
           <p>
             Beyond The Frame Of Uniforms In The New Normal Era. Wear Your Own
             Appearance And Will, No Matter What The Situation Or The Difficulty.

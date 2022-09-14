@@ -13,27 +13,31 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  padding: 1rem 3.75rem;
+  padding: 2.75rem 3.75rem;
   color: $white;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   .left-banner {
-    font-family: 'Jomhuria';
-    letter-spacing: 16px;
+    font-family: $body-font-bold;
+    letter-spacing: 6px;
     font-size: $text-title-huge;
-    line-height: 140px;
     .border-text {
       font-weight: lighter;
       -webkit-text-stroke: 2px $white;
       -webkit-text-fill-color: transparent;
     }
+    h1 {
+      font-weight: 400;
+    }
   }
   .right-banner {
-    height: 100px;
-    width: 214px;
+    width: 224px;
     display: flex;
     align-items: flex-end;
-    margin-bottom: 2.25rem;
+    margin-bottom: 1rem;
+    margin-right: 2.5rem;
+    font-family: $body-font-primary;
+    font-size: $text-size-big;
   }
 }

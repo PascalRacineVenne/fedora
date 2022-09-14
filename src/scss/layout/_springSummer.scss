@@ -1,0 +1,28 @@
+.season-show {
+  margin: 100px 0 100px 4.75rem;
+  .season-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    h2 {
+      font-family: $body-font-bold;
+      font-size: $text-title-huge;
+      width: 60%;
+    }
+    .hor-scroll {
+      display: flex;
+      align-self: flex-end;
+      border-radius: 2px;
+      margin-right: 4.75rem;
+      background-color: $gray;
+      .scroll {
+        width: 33.33px;
+        height: 4px;
+      }
+      .active {
+        background-color: $darkGrey;
+        border-radius: 2px 0 0 2px;
+      }
+    }
+  }
+}

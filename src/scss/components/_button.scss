@@ -1,0 +1,23 @@
+.btn {
+  width: 240px;
+  padding: 1.25rem 2rem;
+  border: 2px solid $darkGrey;
+  text-align: center;
+  font-family: $body-font-regular;
+  font-size: $text-size-medium;
+}
+
+.btn-center {
+  display: grid;
+  place-items: center;
+  margin: 2rem 0;
+}
+
+.btn-white {
+  .btn {
+    background-color: $white;
+    color: $darkGrey;
+    border: none;
+    letter-spacing: 0;
+  }
+}
