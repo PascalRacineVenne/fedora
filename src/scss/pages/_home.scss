@@ -1,7 +1,7 @@
 body {
   background-color: $white;
   height: 100vh;
-  font-family: 'Chivo';
+  font-family: $body-font-primary;
   font-size: $text-size-base;
   color: $darkGrey;
 }
