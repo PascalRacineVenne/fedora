@@ -1,7 +1,7 @@
 .collection {
   margin: 72px;
   .coll-title {
-    font-size: $text-title-big;
+    font-size: $text-title-huge;
     font-family: $body-font-bold;
     width: 50%;
     margin-bottom: 72px;
@@ -38,14 +38,14 @@
 .coll-description {
   margin-left: 64px;
   transform: translateY(-24px);
-  h4 {
+  h3 {
     font-family: $body-font-regular;
     width: 55%;
     padding-bottom: 1.25rem;
   }
   p {
-    font-size: $text-size-small;
+    // font-size: $text-size-small;
     padding-bottom: 1.25rem;
-    width: 88%;
+    width: 98%;
   }
 }

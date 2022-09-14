@@ -2,10 +2,9 @@
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  padding: 2.25rem 1.125rem;
+  padding: 2rem 1.125rem;
   font-family: $body-font-regular;
   ul {
-    font-weight: 900;
     font-size: $text-size-small;
   }
 }
@@ -35,5 +34,5 @@
 
 .title {
   font-family: 'Oi-regular';
-  font-size: $text-size-large;
+  font-size: $text-size-huge;
 }

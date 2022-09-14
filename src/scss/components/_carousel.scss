@@ -1,11 +1,12 @@
 .carousel-container {
-  margin: 0 1rem;
+  margin: 1.5rem 1rem;
   .car-header {
     padding: 0 200px 2rem;
     ul {
       display: flex;
       justify-content: space-around;
       font-family: $body-font-regular;
+      font-size: $text-size-big;
       color: $gray;
     }
   }

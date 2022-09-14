@@ -22,7 +22,7 @@ const CollectionOne = () => {
           alt='style'
         />
         <div className='coll-description'>
-          <h4>Never Before Freedom To Choose</h4>
+          <h3>Never Before Freedom To Choose</h3>
           <p>
             Beyond The Frame Of Uniforms In The New Normal Era. Wear Your Own
             Appearance And Will, No Matter What The Situation Or The Difficulty.
