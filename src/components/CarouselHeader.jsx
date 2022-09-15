@@ -4,7 +4,9 @@ const CarouselHeader = () => {
       <div className='car-header'>
         <ul>
           <li>
-            <a href='/#'>New Arrivals</a>
+            <a className='active' href='/#'>
+              New Arrivals
+            </a>
           </li>
           <li>
             <a href='/#'>Bestsellers</a>

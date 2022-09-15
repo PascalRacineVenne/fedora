@@ -5,9 +5,36 @@
     ul {
       display: flex;
       justify-content: space-around;
-      font-family: $body-font-regular;
-      font-size: $text-size-big;
-      color: $gray;
+      li a {
+        font-family: $body-font-regular;
+        font-size: $text-size-big;
+        color: $gray;
+        display: inline-block;
+        position: relative;
+        transition: $transition2;
+        &.active {
+          color: $darkGrey;
+        }
+        &:hover {
+          transform: scale(1.05, 1.05);
+        }
+        &::after {
+          background: none repeat scroll 0 0 transparent;
+          bottom: 0;
+          content: '';
+          display: block;
+          height: 1px;
+          left: 50%;
+          position: absolute;
+          background: $gray;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          width: 0;
+        }
+        &:hover::after {
+          width: 100%;
+          left: 0;
+        }
+      }
     }
   }
 }
