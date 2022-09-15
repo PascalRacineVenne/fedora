@@ -27,7 +27,7 @@ const CollectionOne = () => {
             Beyond The Frame Of Uniforms In The New Normal Era. Wear Your Own
             Appearance And Will, No Matter What The Situation Or The Difficulty.
           </p>
-          <Button name={'Shop Now'} />
+          <Button name={'Shop Now'} draw={'draw-border'} />
         </div>
       </div>
     </div>

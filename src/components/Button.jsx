@@ -1,6 +1,6 @@
-const Button = ({ name }) => {
+const Button = ({ name, draw }) => {
   return (
-    <div className='btn'>
+    <div className={`btn ${draw}`}>
       <a href='/#' alt='shop now'>
         {name}
       </a>
