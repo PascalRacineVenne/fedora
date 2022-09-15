@@ -1,0 +1,33 @@
+.footer {
+  margin-top: 5rem;
+  .top-footer {
+    padding: 2rem 1rem;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      .bottom-nav {
+        font-family: $body-font-regular;
+        font-size: $text-size-big;
+        color: $gray;
+        &.active {
+          color: $darkGrey;
+        }
+      }
+    }
+  }
+  .bottom-footer {
+    border-top: 1px solid $gray;
+    padding: 1.125rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: $gray;
+    .right-footer {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        font-size: $text-size-small;
+      }
+    }
+  }
+}
