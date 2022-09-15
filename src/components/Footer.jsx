@@ -3,26 +3,26 @@ const Footer = () => {
     <div className='footer'>
       <div className='top-footer'>
         <ul>
-          <li>
+          <li className='bottom-nav active'>
             <a href='/#'>LOOKBOOK</a>
           </li>
-          <li>
+          <li className='bottom-nav'>
             <a href='/#'>ARTICLES</a>
           </li>
-          <li>
+          <li className='bottom-nav'>
             <a href='/#'>CONTACT</a>
           </li>
-          <li>
+          <li className='bottom-nav'>
             <a href='/#'>CAREER</a>
           </li>
-          <li>
+          <li className='bottom-nav'>
             <a href='/#'>ABOUT FEDORA</a>
           </li>
         </ul>
       </div>
       <div className='bottom-footer'>
         <div className='left-footer'>
-          <p className='title'>fedrora</p>
+          <p className='title'>fedora</p>
         </div>
         <div className='right-footer'>
           <ul>
