@@ -11,7 +11,7 @@ const CarouselCard = () => {
         <Card />
       </div>
       <div className='btn-center'>
-        <Button name={'See All'} />
+        <Button name={'See All'} draw={'draw-border'} />
       </div>
     </div>
   );
