@@ -7,17 +7,17 @@ const CollectionOne = () => {
       </div>
       <div className='coll-display'>
         <img
-          className='essential'
+          className='essential fade-in'
           src='/images/jasmin-chew-IvqEWtgttXI-unsplash.jpg'
           alt='style'
         />
         <img
-          className='essential'
+          className='essential fade-in'
           src='/images/michael-c-zVycYmcblDY-unsplash.jpg'
           alt='style'
         />
         <img
-          className='essential'
+          className='essential fade-in'
           src='/images/rayul-_M6gy9oHgII-unsplash.jpg'
           alt='style'
         />
