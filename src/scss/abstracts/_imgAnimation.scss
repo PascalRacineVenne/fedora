@@ -1,8 +1,17 @@
 .fade-in {
   opacity: 0;
-  transition: opacity 500ms ease-in-out;
+  transform: translateY(50%);
+  transition: $transition3;
+  &.appear {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.fade-in.appear {
-  opacity: 1;
+.from-left {
+  transform: translateX(-50%);
+  transition: $transition3;
+  &.appear {
+    transform: translateX(0);
+  }
 }
