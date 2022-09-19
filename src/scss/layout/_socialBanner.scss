@@ -11,7 +11,7 @@
     font-size: $text-title-large;
     text-align: center;
   }
-  .social-link {
+  .social-link a {
     display: flex;
     justify-content: center;
     font-family: $body-font-primary;
@@ -31,18 +31,23 @@
   width: 100%;
   height: 100%;
   display: grid;
+  padding: 0 1rem;
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
     '. a a . . . . . . . . b b . . .'
     '. . . . . . . . . . . . . . c c'
-    '. d d . . . . . . . . . . . c c'
-    '. d d . . . . . . . e e . . . .';
+    'd d . . . . . . . . . . . . c c'
+    'd d . . . . . . . . e e . . . .';
 }
 
 .social-img img {
   position: absolute;
   width: 250px;
+  transition: $transition2;
+  &:hover {
+    transform: scale(1.05, 1.05);
+  }
 }
 
 .social-img img:nth-of-type(1) {
@@ -65,19 +70,16 @@
   height: 200px;
   object-fit: cover;
   top: 80px;
-  right: 1rem;
-  // margin-right: 1rem;
 }
 .social-img img:nth-of-type(4) {
   grid-area: d;
   top: 54px;
-  left: -64px;
   height: 260px;
   object-fit: cover;
 }
 .social-img img:nth-of-type(5) {
   grid-area: e;
-  height: 230px;
+  height: 300px;
   object-fit: cover;
   top: -24px;
 }

@@ -6,9 +6,7 @@ const LatestBanner = () => {
       <div className='banner-text'>
         <h3>LATEST</h3>
         <h3 className='border-text'>COLLECTION</h3>
-        <div className='btn-white'>
-          <Button name={'Shop Now'} />
-        </div>
+        <Button name={'Shop Now'} btnStyle={'btn-white'} />
       </div>
     </div>
   );
