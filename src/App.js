@@ -9,7 +9,7 @@ import SeasonShow from './components/SeasonShow';
 import LatestBanner from './components/LatestBanner';
 import SocialBanner from './components/SocialBanner';
 import Footer from './components/Footer';
-import Component from './utils/cb-ref';
+// import Component from './utils/cb-ref';
 
 function App() {
   return (
@@ -19,7 +19,6 @@ function App() {
       <CollectionOne />
       <CarouselHeader />
       <CarouselCard />
-      <Component />
       <SeasonShow />
       <LatestBanner />
       <CarouselCard />

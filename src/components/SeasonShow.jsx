@@ -1,4 +1,5 @@
 import CarouselCollection from './CarouselCollection';
+
 const SeasonShow = () => {
   return (
     <div className='season-show'>
