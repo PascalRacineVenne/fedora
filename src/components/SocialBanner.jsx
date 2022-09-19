@@ -12,12 +12,14 @@ const SocialBanner = () => {
       <div className='social-text'>
         <h3>SHARE YOUR FAVORITE LOOK, GET INSPIRED.</h3>
         <div className='social-link'>
-          <img
-            className='social-icon'
-            src='/icons/instagram.png'
-            alt='insta-logo'
-          />
-          <a href='/#'>INSTAGRAM</a>
+          <a href='/#'>
+            <img
+              className='social-icon'
+              src='/icons/instagram.png'
+              alt='insta-logo'
+            />
+            <p>INSTAGRAM</p>
+          </a>
         </div>
       </div>
       <div className='social-img' ref={containerRef}>
