@@ -1,3 +1,32 @@
+@mixin scale-titles {
+  font-family: $body-font-regular;
+  font-size: $text-size-big;
+  color: $gray;
+  transition: $transition1;
+  &.active {
+    color: $darkGrey;
+  }
+  &:hover {
+    transform: scale(1.15, 1.15);
+  }
+  &::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: $gray;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  &:hover::after {
+    width: 100%;
+    left: 0;
+  }
+}
+
 .footer {
   margin-top: 5rem;
   .top-footer {
@@ -6,12 +35,7 @@
       display: flex;
       justify-content: space-between;
       .bottom-nav {
-        font-family: $body-font-regular;
-        font-size: $text-size-big;
-        color: $gray;
-        &.active {
-          color: $darkGrey;
-        }
+        @include scale-titles;
       }
     }
   }
@@ -27,6 +51,10 @@
         justify-content: space-between;
         gap: 2rem;
         font-size: $text-size-small;
+        transition: $transition3;
+        .social:hover {
+          color: $darkGrey;
+        }
       }
     }
   }

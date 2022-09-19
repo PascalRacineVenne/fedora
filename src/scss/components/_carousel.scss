@@ -11,12 +11,12 @@
         color: $gray;
         display: inline-block;
         position: relative;
-        transition: $transition2;
+        transition: $transition1;
         &.active {
           color: $darkGrey;
         }
         &:hover {
-          transform: scale(1.05, 1.05);
+          transform: scale(1.15, 1.15);
         }
         &::after {
           background: none repeat scroll 0 0 transparent;
