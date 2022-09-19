@@ -1,23 +1,37 @@
 import Button from './Button';
+import useElementOnScreen from '../utils/useElementOnScreen';
+
 const CollectionOne = () => {
+  const [containerRef, isVisible] = useElementOnScreen({
+    root: null,
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px',
+  });
+
   return (
     <div className='collection'>
       <div className='coll-title'>
         <h3>FOR YOUR ESSENTIAL STYLE</h3>
       </div>
-      <div className='coll-display'>
+      <div className='coll-display' ref={containerRef}>
         <img
-          className='essential'
+          className={
+            isVisible ? 'essential fade-in appear' : 'essential fade-in'
+          }
           src='/images/jasmin-chew-IvqEWtgttXI-unsplash.jpg'
           alt='style'
         />
         <img
-          className='essential'
+          className={
+            isVisible ? 'essential fade-in appear' : 'essential fade-in'
+          }
           src='/images/michael-c-zVycYmcblDY-unsplash.jpg'
           alt='style'
         />
         <img
-          className='essential'
+          className={
+            isVisible ? 'essential fade-in appear' : 'essential fade-in'
+          }
           src='/images/rayul-_M6gy9oHgII-unsplash.jpg'
           alt='style'
         />
