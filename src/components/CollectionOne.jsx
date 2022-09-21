@@ -7,11 +7,18 @@ const CollectionOne = () => {
     threshold: 0.1,
     rootMargin: '0px 0px -100px 0px',
   });
+  const [containerRef2, isVisible2] = useElementOnScreen({
+    root: null,
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px',
+  });
 
   return (
     <div className='collection'>
-      <div className='coll-title'>
-        <h3>FOR YOUR ESSENTIAL STYLE</h3>
+      <div className='coll-title' ref={containerRef2}>
+        <h3 className={isVisible2 ? 'from-left appear' : 'from-left'}>
+          FOR YOUR ESSENTIAL STYLE
+        </h3>
       </div>
       <div className='coll-display' ref={containerRef}>
         <img
