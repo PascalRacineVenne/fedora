@@ -41,7 +41,6 @@ const CarouselCard = () => {
         className=''
         containerClass='container-with-dots'
         dotListClass=''
-        // draggable
         draggable={false}
         focusOnSelect={false}
         infinite
@@ -60,7 +59,6 @@ const CarouselCard = () => {
         showDots={true}
         sliderClass=''
         slidesToSlide={1}
-        // swipeable
         swipeable={false}
       >
         <Card />
@@ -76,16 +74,6 @@ const CarouselCard = () => {
       </div>
     </div>
   );
-  // return (
-  //   <div className='carousel-container'>
-  //     <div className='carousel'>
-
-  //     </div>
-  // <div className='btn-center'>
-  //   <Button name={'See All'} draw={'draw-border'} />
-  // </div>;
-  //   </div>
-  // );
 };
 
 export default CarouselCard;
