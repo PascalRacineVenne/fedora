@@ -1,9 +1,16 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import useElementOnScreen from '../utils/useElementOnScreen';
 import Button from './Button';
 import Card from './Card';
 
 const CarouselCard = () => {
+  const [containerRef, isVisible] = useElementOnScreen({
+    root: null,
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px',
+  });
+
   const responsive = {
     desktop: {
       breakpoint: {
@@ -32,16 +39,15 @@ const CarouselCard = () => {
   };
 
   return (
-    <div className='carousel-container'>
+    <div className='carousel-container' ref={containerRef}>
       <Carousel
         additionalTransfrom={0}
         arrows
         autoPlaySpeed={3000}
         centerMode={false}
-        className=''
+        className={isVisible ? 'fade-in appear' : 'fade-in'}
         containerClass='container-with-dots'
         dotListClass=''
-        // draggable
         draggable={false}
         focusOnSelect={false}
         infinite
@@ -60,7 +66,6 @@ const CarouselCard = () => {
         showDots={true}
         sliderClass=''
         slidesToSlide={1}
-        // swipeable
         swipeable={false}
       >
         <Card />
@@ -76,16 +81,6 @@ const CarouselCard = () => {
       </div>
     </div>
   );
-  // return (
-  //   <div className='carousel-container'>
-  //     <div className='carousel'>
-
-  //     </div>
-  // <div className='btn-center'>
-  //   <Button name={'See All'} draw={'draw-border'} />
-  // </div>;
-  //   </div>
-  // );
 };
 
 export default CarouselCard;
