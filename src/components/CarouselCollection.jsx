@@ -74,7 +74,6 @@ const CarouselCollection = () => {
         slidesToSlide={1}
         swipeable={false}
       >
-        {console.log(isVisible)}
         <img
           src='/images/manny-moreno-pidhWc7zHjA-unsplash.jpg'
           alt='collection'
