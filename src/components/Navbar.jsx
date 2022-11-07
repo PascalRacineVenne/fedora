@@ -1,8 +1,13 @@
+import React from 'react';
+import Menu from './Menu';
+import UserMenu from './UserMenu';
+
 const Navbar = () => {
   return (
     <div className='navbar'>
       <div className='nav-left'>
-        <ul>
+        <Menu />
+        {/* <ul>
           <li>
             <a href='/#' alt='shop'>
               Shop
@@ -18,12 +23,13 @@ const Navbar = () => {
               Lookbook
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
       <div className='nav-center title'>fedora</div>
       <div className='nav-right'>
         <ul>
-          <li>
+          <UserMenu />
+          {/* <li>
             <a href='/#' alt='account'>
               My Account
             </a>
@@ -32,7 +38,7 @@ const Navbar = () => {
             <a href='/#' alt='cart'>
               Cart (0)
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
