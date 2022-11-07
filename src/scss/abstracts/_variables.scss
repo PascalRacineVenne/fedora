@@ -16,6 +16,7 @@ $text-size-tiny: calc($text-size-base - 6px);
 $text-size-small: calc($text-size-base - 4px);
 $text-size-medium: $text-size-base;
 $text-size-big: calc($text-size-base + 4px);
+// $text-size-big: clamp(0.5rem, 2vh, calc($text-size-base + 4px));
 $text-size-large: calc($text-size-base + 6px);
 $text-size-huge: calc($text-size-base + 12px);
 $text-title-normal: calc($text-size-base + 30px);
