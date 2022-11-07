@@ -6,6 +6,7 @@ const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleBackClick = () => {
+    console.log('Hello user Arrow');
     setMenuOpen(!menuOpen);
   };
 
