@@ -2,9 +2,16 @@
   margin: 1.5rem 1rem;
   .car-header {
     padding: 0 200px 2rem;
+    @include devices(mobile) {
+      padding: 0 0 1rem;
+    }
     ul {
       display: flex;
       justify-content: space-around;
+      @include devices(mobile) {
+        justify-content: flex-start;
+        // overflow-x: scroll;
+      }
       li a {
         font-family: $body-font-regular;
         font-size: $text-size-big;
@@ -12,6 +19,10 @@
         display: inline-block;
         position: relative;
         transition: $transition1;
+        @include devices(mobile) {
+          font-size: clamp(1rem, 2vh, $text-size-big);
+          // padding: 0 12px;
+        }
         &.active {
           color: $darkGrey;
         }
