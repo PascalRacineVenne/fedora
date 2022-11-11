@@ -10,6 +10,10 @@
     font-family: $body-font-bold;
     font-size: $text-title-large;
     text-align: center;
+    @include devices(mobile) {
+      width: 100%;
+      font-size: clamp(2rem, 2vh, $text-title-large);
+    }
   }
   .social-link a {
     display: flex;
@@ -70,6 +74,9 @@
   height: 200px;
   object-fit: cover;
   top: 80px;
+  @include devices(mobile) {
+    display: none;
+  }
 }
 .social-img img:nth-of-type(4) {
   grid-area: d;
