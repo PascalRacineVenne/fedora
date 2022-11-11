@@ -4,8 +4,8 @@ const LatestBanner = () => {
   return (
     <div className='latest-banner'>
       <div className='banner-text'>
-        <h3>LATEST</h3>
-        <h3 className='border-text'>COLLECTION</h3>
+        <h2>LATEST</h2>
+        <h2 className='border-text'>COLLECTION</h2>
         <Button name={'Shop Now'} btnStyle={'btn-white'} />
       </div>
     </div>

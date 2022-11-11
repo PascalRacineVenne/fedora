@@ -1,5 +1,8 @@
 .season-show {
   margin: 100px 0 100px 4.75rem;
+  @include devices(mobile) {
+    margin: 100px 0 100px 1rem;
+  }
   .season-header {
     display: flex;
     justify-content: space-between;
@@ -8,6 +11,10 @@
       font-family: $body-font-bold;
       font-size: $text-title-huge;
       width: 60%;
+      @include devices(mobile) {
+        font-size: clamp(1.25rem, 4.5vh, $text-title-huge);
+        width: 100%;
+      }
     }
     .hor-scroll {
       display: flex;
