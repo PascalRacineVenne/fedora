@@ -9,7 +9,7 @@
   position: relative;
   @include devices(mobile) {
     margin: 0;
-    height: 60vh;
+    height: 80vh;
   }
 }
 
@@ -35,7 +35,7 @@
       font-weight: 400;
     }
     @include devices(mobile) {
-      font-size: clamp(1.25rem, 2.5vh, $text-title-huge);
+      font-size: clamp(2rem, 2.5vh, $text-title-huge);
     }
   }
   .right-banner {
@@ -47,7 +47,7 @@
     font-family: $body-font-primary;
     font-size: $text-size-big;
     @include devices(mobile) {
-      font-size: clamp(0.5rem, 2vh, $text-size-big);
+      font-size: clamp(1rem, 2vh, $text-size-big);
     }
   }
   @include devices(mobile) {

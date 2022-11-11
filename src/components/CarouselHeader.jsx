@@ -4,15 +4,15 @@ const CarouselHeader = () => {
       <div className='car-header'>
         <ul>
           <li>
-            <a className='active' href='/#'>
+            <a className='active' href='/'>
               New Arrivals
             </a>
           </li>
           <li>
-            <a href='/#'>Bestsellers</a>
+            <a href='/'>Bestsellers</a>
           </li>
           <li>
-            <a href='/#'>Exclusive</a>
+            <a href='/'>Exclusive</a>
           </li>
         </ul>
       </div>

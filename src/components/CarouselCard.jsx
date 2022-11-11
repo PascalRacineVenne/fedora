@@ -63,10 +63,10 @@ const CarouselCard = () => {
         rewindWithAnimation={false}
         rtl={false}
         shouldResetAutoplay
-        showDots={true}
+        showDots={false}
         sliderClass=''
         slidesToSlide={1}
-        swipeable={false}
+        swipeable={true}
       >
         <Card />
         <Card />
