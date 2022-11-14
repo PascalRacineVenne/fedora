@@ -22,7 +22,7 @@ function App() {
       <LatestBanner />
       <CarouselCard />
       <SocialBanner />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
