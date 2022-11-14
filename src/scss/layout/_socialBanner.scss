@@ -53,8 +53,8 @@
   position: absolute;
   width: 250px;
   transition: $transition2;
-  &:hover {
-    transform: scale(1.05, 1.05);
+  @include devices(mobile) {
+    transform: scale(0.5);
   }
 }
 
@@ -65,11 +65,11 @@
   object-fit: contain;
   top: -120px;
   left: 100px;
-  @include devices(mobile) {
-    top: -60px;
-    left: 0px;
-    transform: scale(0.75);
-  }
+  // @include devices(mobile) {
+  //   top: -60px;
+  //   left: 0px;
+  //   transform: scale(0.75);
+  // }
 }
 .social-img img:nth-of-type(2) {
   grid-area: b;
