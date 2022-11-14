@@ -33,7 +33,7 @@ const CarouselCard = () => {
         max: 1024,
         min: 464,
       },
-      items: 2,
+      items: 1,
       partialVisibilityGutter: 30,
     },
   };
@@ -63,10 +63,10 @@ const CarouselCard = () => {
         rewindWithAnimation={false}
         rtl={false}
         shouldResetAutoplay
-        showDots={true}
+        showDots={false}
         sliderClass=''
         slidesToSlide={1}
-        swipeable={false}
+        swipeable={true}
       >
         <Card />
         <Card />

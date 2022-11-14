@@ -5,11 +5,19 @@
   display: grid;
   place-items: center;
   position: relative;
+  @include devices(mobile) {
+    margin-top: 100px;
+    height: 60vh;
+  }
   .social-text {
     width: 50%;
     font-family: $body-font-bold;
     font-size: $text-title-large;
     text-align: center;
+    @include devices(mobile) {
+      width: 100%;
+      font-size: clamp(2rem, 2vh, $text-title-large);
+    }
   }
   .social-link a {
     display: flex;
@@ -57,12 +65,19 @@
   object-fit: contain;
   top: -120px;
   left: 100px;
+  @include devices(mobile) {
+    top: -60px;
+    left: 0px;
+    transform: scale(0.75);
+  }
 }
 .social-img img:nth-of-type(2) {
   grid-area: b;
   height: 300px;
   object-fit: cover;
   top: -60px;
+  @include devices(mobile) {
+  }
 }
 .social-img img:nth-of-type(3) {
   grid-area: c;
@@ -70,16 +85,23 @@
   height: 200px;
   object-fit: cover;
   top: 80px;
+  @include devices(mobile) {
+    display: none;
+  }
 }
 .social-img img:nth-of-type(4) {
   grid-area: d;
   top: 54px;
   height: 260px;
   object-fit: cover;
+  @include devices(mobile) {
+  }
 }
 .social-img img:nth-of-type(5) {
   grid-area: e;
   height: 300px;
   object-fit: cover;
   top: -24px;
+  @include devices(mobile) {
+  }
 }

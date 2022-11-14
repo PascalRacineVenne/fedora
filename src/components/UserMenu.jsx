@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 // import Arrow from '../assets/icons/arrow.svg';
-// import BurgerMenu from './BurgerMenu';
+// import Cart from './Cart';
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleBackClick = () => {
-    console.log('Hello Arrow');
-    setMenuOpen(!menuOpen);
-  };
+  // const handleBackClick = () => {
+  //   console.log('Hello user Arrow');
+  //   setMenuOpen(!menuOpen);
+  // };
 
   return (
-    <div className='left-col'>
-      {/* <BurgerMenu setMenuOpen={setMenuOpen} menuOpen={menuOpen} /> */}
+    <div className='right-col'>
+      {/* <Cart setMenuOpen={setMenuOpen} menuOpen={menuOpen} /> */}
       <nav className={menuOpen ? 'show-menu' : ''}>
         {/* <img
           src={Arrow}
@@ -22,13 +22,14 @@ const Menu = () => {
         /> */}
         <ul>
           <li>
-            <a href='/#'>Shop</a>
+            <a href='/#' alt='account'>
+              My Account
+            </a>
           </li>
           <li>
-            <a href='/#'>About</a>
-          </li>
-          <li>
-            <a href='/#'>Lookbook</a>
+            <a href='/#' alt='cart'>
+              Cart (0)
+            </a>
           </li>
         </ul>
       </nav>

@@ -71,6 +71,9 @@
   text-align: center;
   font-family: $body-font-regular;
   font-size: $text-size-medium;
+  @include devices(mobile) {
+    padding: 1.25rem 4rem;
+  }
 }
 
 .btn-center {

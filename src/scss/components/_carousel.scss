@@ -2,9 +2,19 @@
   margin: 1.5rem 1rem;
   .car-header {
     padding: 0 200px 2rem;
+    @include devices(mobile) {
+      padding: 0 0 1rem;
+    }
     ul {
       display: flex;
       justify-content: space-around;
+      @include devices(mobile) {
+        justify-content: flex-start;
+        width: max-content;
+      }
+      li {
+        display: inline;
+      }
       li a {
         font-family: $body-font-regular;
         font-size: $text-size-big;
@@ -12,6 +22,11 @@
         display: inline-block;
         position: relative;
         transition: $transition1;
+        @include devices(mobile) {
+          font-size: clamp(1rem, 3vh, $text-size-big);
+          width: 100%;
+          padding: 0 12px;
+        }
         &.active {
           color: $darkGrey;
         }
@@ -39,11 +54,12 @@
   }
 }
 
-.carousel {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-}
+// .carousel {
+//   display: flex;
+//   justify-content: space-between;
+//   gap: 1rem;
+//   border: 3px solid goldenrod;
+// }
 
 .season-carousel {
   display: flex;
