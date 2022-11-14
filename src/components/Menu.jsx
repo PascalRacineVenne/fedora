@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Arrow from '../assets/icons/arrow.svg';
-import BurgerMenu from './BurgerMenu';
+// import Arrow from '../assets/icons/arrow.svg';
+// import BurgerMenu from './BurgerMenu';
 
 const Menu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,14 +12,14 @@ const Menu = () => {
 
   return (
     <div className='left-col'>
-      <BurgerMenu setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
+      {/* <BurgerMenu setMenuOpen={setMenuOpen} menuOpen={menuOpen} /> */}
       <nav className={menuOpen ? 'show-menu' : ''}>
-        <img
+        {/* <img
           src={Arrow}
           alt='arrow'
           className='back-btn'
           onClick={handleBackClick}
-        />
+        /> */}
         <ul>
           <li>
             <a href='/#'>Shop</a>
