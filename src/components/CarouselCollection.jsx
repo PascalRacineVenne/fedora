@@ -56,7 +56,7 @@ const CarouselCollection = () => {
         draggable={false}
         focusOnSelect={false}
         infinite
-        itemClass=''
+        itemClass='carouselItem'
         keyBoardControl
         minimumTouchDrag={80}
         pauseOnHover
