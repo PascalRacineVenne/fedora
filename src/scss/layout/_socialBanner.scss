@@ -27,6 +27,9 @@
     padding: 3rem;
     gap: 1rem;
     letter-spacing: -1px;
+    @include devices(mobile) {
+      padding: 1.5rem;
+    }
   }
 }
 
@@ -43,19 +46,26 @@
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
-    '. a a . . . . . . . . b b . . .'
-    '. . . . . . . . . . . . . . c c'
-    'd d . . . . . . . . . . . . c c'
+    'a a a . . . . . . . . b b . . .'
+    '. . . . . . . . . . . . . . . c'
+    'd d . . . . . . . . . . . . . c'
     'd d . . . . . . . . e e . . . .';
+  @include devices(mobile) {
+    padding: 0;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      'a . b b'
+      '. . . .'
+      '. . . .'
+      'd . e e';
+  }
 }
 
 .social-img img {
   position: absolute;
   width: 250px;
   transition: $transition2;
-  @include devices(mobile) {
-    transform: scale(0.5);
-  }
 }
 
 .social-img img:nth-of-type(1) {
@@ -65,11 +75,12 @@
   object-fit: contain;
   top: -120px;
   left: 100px;
-  // @include devices(mobile) {
-  //   top: -60px;
-  //   left: 0px;
-  //   transform: scale(0.75);
-  // }
+  @include devices(mobile) {
+    width: 100px;
+    top: -40px;
+    left: 1rem;
+    place-self: end;
+  }
 }
 .social-img img:nth-of-type(2) {
   grid-area: b;
@@ -77,6 +88,10 @@
   object-fit: cover;
   top: -60px;
   @include devices(mobile) {
+    width: 75%;
+    height: 150px;
+    top: -30px;
+    place-self: end;
   }
 }
 .social-img img:nth-of-type(3) {
@@ -85,6 +100,7 @@
   height: 200px;
   object-fit: cover;
   top: 80px;
+  place-self: end;
   @include devices(mobile) {
     display: none;
   }
@@ -95,13 +111,21 @@
   height: 260px;
   object-fit: cover;
   @include devices(mobile) {
+    top: 0;
+    width: 120%;
+    height: 100%;
   }
 }
 .social-img img:nth-of-type(5) {
   grid-area: e;
-  height: 300px;
+  height: 260px;
   object-fit: cover;
   top: -24px;
   @include devices(mobile) {
+    top: -24px;
+    right: 1rem;
+    width: 80%;
+    height: 150px;
+    place-self: end;
   }
 }
