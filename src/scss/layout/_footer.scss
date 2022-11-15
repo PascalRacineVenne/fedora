@@ -29,13 +29,23 @@
 
 .footer {
   margin-top: 5rem;
+  @include devices(mobile) {
+    margin-top: 1rem;
+  }
   .top-footer {
     padding: 2rem 1rem;
+    @include devices(mobile) {
+      padding: 1rem 1rem;
+    }
     ul {
       display: flex;
       justify-content: space-between;
       .bottom-nav {
         @include scale-titles;
+      }
+      @include devices(mobile) {
+        flex-direction: column;
+        gap: 1rem;
       }
     }
   }
@@ -45,6 +55,17 @@
     display: flex;
     justify-content: space-between;
     color: $gray;
+    @include devices(mobile) {
+      flex-direction: column-reverse;
+      border-top: none;
+      padding: 1.125rem 0;
+      .left-footer {
+        padding-top: 1rem;
+        border-top: 1px solid $gray;
+        display: flex;
+        justify-content: center;
+      }
+    }
     .right-footer {
       ul {
         display: flex;
@@ -54,6 +75,9 @@
         transition: $transition3;
         .social:hover {
           color: $darkGrey;
+        }
+        @include devices(mobile) {
+          padding: 1rem;
         }
       }
     }
