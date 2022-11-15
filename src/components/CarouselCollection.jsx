@@ -15,7 +15,7 @@ const CarouselCollection = () => {
         max: 3000,
         min: 1024,
       },
-      items: 5,
+      items: 4,
       partialVisibilityGutter: 40,
     },
     mobile: {
@@ -55,8 +55,8 @@ const CarouselCollection = () => {
         dotListClass=''
         draggable={false}
         focusOnSelect={false}
-        infinite
-        itemClass=''
+        infinite={true}
+        itemClass='summer-img'
         keyBoardControl
         minimumTouchDrag={80}
         pauseOnHover
