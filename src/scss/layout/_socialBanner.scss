@@ -86,7 +86,7 @@
   grid-area: b;
   height: 300px;
   object-fit: cover;
-  top: -60px;
+  top: -100px;
   @include devices(mobile) {
     width: 75%;
     height: 150px;
