@@ -15,7 +15,7 @@ const SocialBanner = () => {
           <a href='/#'>
             <img
               className='social-icon'
-              src='/icons/instagram.png'
+              src='/assets/icons/instagram.png'
               alt='insta-logo'
             />
             <p>INSTAGRAM</p>
@@ -25,27 +25,27 @@ const SocialBanner = () => {
       <div className='social-img' ref={containerRef}>
         <img
           className={isVisible ? 'fade-in appear' : 'fade-in'}
-          src='/images/clem-onojeghuo-4NAG83bhe6c-unsplash.jpg'
+          src='/assets/images/clem-onojeghuo-4NAG83bhe6c-unsplash.jpg'
           alt='img1'
         />
         <img
           className={isVisible ? 'fade-in appear' : 'fade-in'}
-          src='/images/clem-onojeghuo-HhaV2XXZN18-unsplash.jpg'
+          src='/assets/images/clem-onojeghuo-HhaV2XXZN18-unsplash.jpg'
           alt='img2'
         />
         <img
           className={isVisible ? 'fade-in appear' : 'fade-in'}
-          src='/images/charlesdeluvio-AQRp2NH-O8k-unsplash.jpg'
+          src='/assets/images/charlesdeluvio-AQRp2NH-O8k-unsplash.jpg'
           alt='img3'
         />
         <img
           className={isVisible ? 'fade-in appear' : 'fade-in'}
-          src='/images/joey-nicotra-DNikBY1J--g-unsplash.jpg'
+          src='/assets/images/joey-nicotra-DNikBY1J--g-unsplash.jpg'
           alt='img4'
         />
         <img
           className={isVisible ? 'fade-in appear' : 'fade-in'}
-          src='/images/peyman-farmani-FktzAo4XHEs-unsplash.jpg'
+          src='/assets/images/peyman-farmani-FktzAo4XHEs-unsplash.jpg'
           alt='img5'
         />
       </div>

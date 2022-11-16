@@ -75,27 +75,27 @@ const CarouselCollection = () => {
         swipeable={false}
       >
         <img
-          src='/images/manny-moreno-pidhWc7zHjA-unsplash.jpg'
+          src='/assets/images/manny-moreno-pidhWc7zHjA-unsplash.jpg'
           alt='collection'
         />
         <img
-          src='/images/josue-ladoo-pelegrin-s4UjZQYKjjc-unsplash.jpg'
+          src='/assets/images/josue-ladoo-pelegrin-s4UjZQYKjjc-unsplash.jpg'
           alt='collection'
         />
         <img
-          src='/images/lino-ogenio-JP50-TUoRIA-unsplash.jpg'
+          src='/assets/images/lino-ogenio-JP50-TUoRIA-unsplash.jpg'
           alt='collection'
         />
         <img
-          src='/images/cassie-matias-GbiBqMnj6ds-unsplash.jpg'
+          src='/assets/images/cassie-matias-GbiBqMnj6ds-unsplash.jpg'
           alt='collection'
         />
         <img
-          src='/images/illiya-vjestica-qaCCuGcbJQU-unsplash.jpg'
+          src='/assets/images/illiya-vjestica-qaCCuGcbJQU-unsplash.jpg'
           alt='collection'
         />
         <img
-          src='/images/allef-vinicius-nMLjDDElgCw-unsplash.jpg'
+          src='/assets/images/allef-vinicius-nMLjDDElgCw-unsplash.jpg'
           alt='collection'
         />
       </Carousel>
