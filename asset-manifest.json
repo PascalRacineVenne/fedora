@@ -1,8 +1,23 @@
 {
   "files": {
     "main.css": "/fedora/static/css/main.aeef685b.css",
-    "main.js": "/fedora/static/js/main.70d144ec.js",
+    "main.js": "/fedora/static/js/main.31bc75c8.js",
+    "static/media/illiya-vjestica-qaCCuGcbJQU-unsplash.jpg": "/fedora/static/media/illiya-vjestica-qaCCuGcbJQU-unsplash.8be10cba60501fddb162.jpg",
+    "static/media/manny-moreno-pidhWc7zHjA-unsplash.jpg": "/fedora/static/media/manny-moreno-pidhWc7zHjA-unsplash.95f0b90f860c88c8f2cb.jpg",
+    "static/media/allef-vinicius-nMLjDDElgCw-unsplash.jpg": "/fedora/static/media/allef-vinicius-nMLjDDElgCw-unsplash.d5c5dab5553b9a1aaf33.jpg",
     "static/media/allef-vinicius--eKbU_bOF9g-unsplash.jpg": "/fedora/static/media/allef-vinicius--eKbU_bOF9g-unsplash.764344b45db22452cbc6.jpg",
+    "static/media/joey-nicotra-DNikBY1J--g-unsplash.jpg": "/fedora/static/media/joey-nicotra-DNikBY1J--g-unsplash.cd65bb75709106228f05.jpg",
+    "static/media/lino-ogenio-JP50-TUoRIA-unsplash.jpg": "/fedora/static/media/lino-ogenio-JP50-TUoRIA-unsplash.f4d0804c4cde35a57c6c.jpg",
+    "static/media/jasmin-chew-IvqEWtgttXI-unsplash.jpg": "/fedora/static/media/jasmin-chew-IvqEWtgttXI-unsplash.c016aad47b857633b903.jpg",
+    "static/media/nico-marks-7cvNasUbA_w-unsplash.jpg": "/fedora/static/media/nico-marks-7cvNasUbA_w-unsplash.1e513df5eea7e56dfa0c.jpg",
+    "static/media/josue-ladoo-pelegrin-s4UjZQYKjjc-unsplash.jpg": "/fedora/static/media/josue-ladoo-pelegrin-s4UjZQYKjjc-unsplash.c1d6ff0dd8047677f98a.jpg",
+    "static/media/charlesdeluvio-AQRp2NH-O8k-unsplash.jpg": "/fedora/static/media/charlesdeluvio-AQRp2NH-O8k-unsplash.12723793bfc5bd587e16.jpg",
+    "static/media/clem-onojeghuo-4NAG83bhe6c-unsplash.jpg": "/fedora/static/media/clem-onojeghuo-4NAG83bhe6c-unsplash.30bc537297769e72c54a.jpg",
+    "static/media/clem-onojeghuo-HhaV2XXZN18-unsplash.jpg": "/fedora/static/media/clem-onojeghuo-HhaV2XXZN18-unsplash.c78286c7465ccae31ca4.jpg",
+    "static/media/cassie-matias-GbiBqMnj6ds-unsplash.jpg": "/fedora/static/media/cassie-matias-GbiBqMnj6ds-unsplash.1a3c0d33c15e5859e6e4.jpg",
+    "static/media/rayul-_M6gy9oHgII-unsplash.jpg": "/fedora/static/media/rayul-_M6gy9oHgII-unsplash.916df3fbce8ab4681dc3.jpg",
+    "static/media/michael-c-zVycYmcblDY-unsplash.jpg": "/fedora/static/media/michael-c-zVycYmcblDY-unsplash.100d99ba69f4839e2b73.jpg",
+    "static/media/peyman-farmani-FktzAo4XHEs-unsplash.jpg": "/fedora/static/media/peyman-farmani-FktzAo4XHEs-unsplash.0cd3c645a03af8c1e78f.jpg",
     "static/media/taylor-brandon-d-HOgxTgtZY-unsplash.jpg": "/fedora/static/media/taylor-brandon-d-HOgxTgtZY-unsplash.9e1a52da5011aae85e22.jpg",
     "static/media/Oi-Regular.ttf": "/fedora/static/media/Oi-Regular.7750edfb0d5d957f420e.ttf",
     "static/media/Jomhuria-Regular.ttf": "/fedora/static/media/Jomhuria-Regular.df69ce14ab6fbc509540.ttf",
@@ -12,6 +27,7 @@
     "static/media/Chivo-Black.ttf": "/fedora/static/media/Chivo-Black.dc7eef684979f3afa757.ttf",
     "static/media/BowlbyOneSC-Regular.ttf": "/fedora/static/media/BowlbyOneSC-Regular.841cf9be1102e624c50b.ttf",
     "static/media/Chivo-Bold.ttf": "/fedora/static/media/Chivo-Bold.51dcd92eb61cbec24c51.ttf",
+    "static/media/instagram.png": "/fedora/static/media/instagram.79ea850107caae079257.png",
     "static/media/revicons.eot": "/fedora/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/fedora/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/fedora/static/media/revicons.e8746a624ed098489406.woff",
@@ -19,10 +35,10 @@
     "static/media/arrow.svg": "/fedora/static/media/arrow.d64bc6fc69e76737e587075315af88c6.svg",
     "static/media/menu.svg": "/fedora/static/media/menu.48e5c35132f930b1810bbf2f7257498c.svg",
     "main.aeef685b.css.map": "/fedora/static/css/main.aeef685b.css.map",
-    "main.70d144ec.js.map": "/fedora/static/js/main.70d144ec.js.map"
+    "main.31bc75c8.js.map": "/fedora/static/js/main.31bc75c8.js.map"
   },
   "entrypoints": [
     "static/css/main.aeef685b.css",
-    "static/js/main.70d144ec.js"
+    "static/js/main.31bc75c8.js"
   ]
 }
