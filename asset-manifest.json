@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/fedora/static/css/main.aeef685b.css",
+    "main.js": "/fedora/static/js/main.9a9aaa8f.js",
+    "static/media/allef-vinicius--eKbU_bOF9g-unsplash.jpg": "/fedora/static/media/allef-vinicius--eKbU_bOF9g-unsplash.764344b45db22452cbc6.jpg",
+    "static/media/taylor-brandon-d-HOgxTgtZY-unsplash.jpg": "/fedora/static/media/taylor-brandon-d-HOgxTgtZY-unsplash.9e1a52da5011aae85e22.jpg",
+    "static/media/Oi-Regular.ttf": "/fedora/static/media/Oi-Regular.7750edfb0d5d957f420e.ttf",
+    "static/media/Jomhuria-Regular.ttf": "/fedora/static/media/Jomhuria-Regular.df69ce14ab6fbc509540.ttf",
+    "static/media/Chivo-Light.ttf": "/fedora/static/media/Chivo-Light.ac29c1af99a9bf81b478.ttf",
+    "static/media/BowlbyOne-Regular.ttf": "/fedora/static/media/BowlbyOne-Regular.1a76a38c868e10ecca9b.ttf",
+    "static/media/Chivo-Regular.ttf": "/fedora/static/media/Chivo-Regular.c02964be6ad17a843ee3.ttf",
+    "static/media/Chivo-Black.ttf": "/fedora/static/media/Chivo-Black.dc7eef684979f3afa757.ttf",
+    "static/media/BowlbyOneSC-Regular.ttf": "/fedora/static/media/BowlbyOneSC-Regular.841cf9be1102e624c50b.ttf",
+    "static/media/Chivo-Bold.ttf": "/fedora/static/media/Chivo-Bold.51dcd92eb61cbec24c51.ttf",
+    "static/media/revicons.eot": "/fedora/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/fedora/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/fedora/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/fedora/index.html",
+    "static/media/arrow.svg": "/fedora/static/media/arrow.d64bc6fc69e76737e587075315af88c6.svg",
+    "static/media/menu.svg": "/fedora/static/media/menu.48e5c35132f930b1810bbf2f7257498c.svg",
+    "main.aeef685b.css.map": "/fedora/static/css/main.aeef685b.css.map",
+    "main.9a9aaa8f.js.map": "/fedora/static/js/main.9a9aaa8f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aeef685b.css",
+    "static/js/main.9a9aaa8f.js"
+  ]
+}
