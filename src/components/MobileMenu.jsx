@@ -7,7 +7,6 @@ const MobileMenu = () => {
   console.log(menuOpen);
 
   const handleBackClick = () => {
-    console.log('Hello Arrow');
     setMenuOpen(!menuOpen);
   };
 
@@ -22,32 +21,34 @@ const MobileMenu = () => {
             className='back-btn'
             onClick={handleBackClick}
           />
-          <div className='user-actions'>
-            <ul>
-              <li>
-                <a href='/#'>Shop</a>
-              </li>
-              <li>
-                <a href='/#'>About</a>
-              </li>
-              <li>
-                <a href='/#'>Lookbook</a>
-              </li>
-            </ul>
-          </div>
-          <div className='user-settings'>
-            <ul>
-              <li>
-                <a href='/#' alt='account'>
-                  My Account
-                </a>
-              </li>
-              <li>
-                <a href='/#' alt='cart'>
-                  Cart (0)
-                </a>
-              </li>
-            </ul>
+          <div className='user-options'>
+            <div className='user-actions'>
+              <ul>
+                <li>
+                  <a href='/#'>Shop</a>
+                </li>
+                <li>
+                  <a href='/#'>About</a>
+                </li>
+                <li>
+                  <a href='/#'>Lookbook</a>
+                </li>
+              </ul>
+            </div>
+            <div className='user-settings'>
+              <ul>
+                <li>
+                  <a href='/#' alt='account'>
+                    My Account
+                  </a>
+                </li>
+                <li>
+                  <a href='/#' alt='cart'>
+                    Cart (0)
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>

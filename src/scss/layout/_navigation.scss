@@ -69,19 +69,35 @@
 
 .right-col {
   display: none;
+  position: fixed;
+  z-index: 1;
+  background: $lightGray;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+  max-width: 500px;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  font-family: $body-font-primary;
+  padding: 1rem;
   @include devices(mobile) {
     display: block;
-    position: fixed;
-    z-index: 1;
-    background: $lightGray;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    width: 50%;
-    max-width: 500px;
-    transform: translateX(100%);
-    transition: transform 0.3s;
   }
+}
+
+.user-options {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  li {
+    padding: 1rem 0;
+  }
+}
+
+.user-actions {
+  border-bottom: 1px solid $gray;
 }
 
 .title {
@@ -92,3 +108,7 @@
 .show-menu {
   transform: translateX(0%);
 }
+
+// .back-btn {
+
+// }
