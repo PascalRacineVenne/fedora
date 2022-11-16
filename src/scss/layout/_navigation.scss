@@ -1,3 +1,7 @@
+.nav {
+  display: flex;
+}
+
 .navbar {
   width: 100vw;
   display: flex;
@@ -34,7 +38,8 @@
   }
   @include devices(mobile) {
     padding: 1rem 1.125rem;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -50,20 +55,7 @@
     }
   }
   @include devices(mobile) {
-    width: 34%;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    transform: translateY(-100%);
-    background: white;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    ul {
-      display: block;
-      li {
-        padding: 0.75rem 0.75rem;
-      }
-    }
+    display: none;
   }
 }
 .nav-right {
@@ -76,22 +68,41 @@
     }
   }
   @include devices(mobile) {
-    width: 36%;
-    position: fixed;
-    z-index: 1;
-    right: 0;
-    top: 0;
-    transform: translateY(-100%);
-    background: white;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: right;
-    ul {
-      display: block;
-      li {
-        padding: 0.75rem 0.75rem;
-      }
-    }
+    display: none;
   }
+}
+
+.right-col {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  background: $lightGray;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+  max-width: 500px;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+  font-family: $body-font-primary;
+  padding: 1rem;
+  @include devices(mobile) {
+    display: block;
+  }
+}
+
+.user-options {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  li {
+    padding: 1rem 0;
+  }
+}
+
+.user-actions {
+  border-bottom: 1px solid $gray;
 }
 
 .title {
@@ -100,5 +111,9 @@
 }
 
 .show-menu {
-  transform: translateY(0);
+  transform: translateX(0%);
+}
+
+.mobile-menu {
+  padding: 1rem;
 }
