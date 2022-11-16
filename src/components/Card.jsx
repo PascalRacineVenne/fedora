@@ -3,7 +3,7 @@ const Card = ({ imgSrc, sku, name, price }) => {
     <div className='card'>
       <div className='card-img'>
         <img
-          src='/assets/images/nico-marks-7cvNasUbA_w-unsplash.jpg'
+          src='../assets/images/nico-marks-7cvNasUbA_w-unsplash.jpg'
           alt='card'
         />
       </div>

@@ -25,21 +25,21 @@ const CollectionOne = () => {
           className={
             isVisible ? 'essential fade-in appear' : 'essential fade-in'
           }
-          src='/assets/images/jasmin-chew-IvqEWtgttXI-unsplash.jpg'
+          src='../assets/images/jasmin-chew-IvqEWtgttXI-unsplash.jpg'
           alt='style'
         />
         <img
           className={
             isVisible ? 'essential fade-in appear' : 'essential fade-in'
           }
-          src='/assets/images/michael-c-zVycYmcblDY-unsplash.jpg'
+          src='../assets/images/michael-c-zVycYmcblDY-unsplash.jpg'
           alt='style'
         />
         <img
           className={
             isVisible ? 'essential fade-in appear' : 'essential fade-in'
           }
-          src='/assets/images/rayul-_M6gy9oHgII-unsplash.jpg'
+          src='../assets/images/rayul-_M6gy9oHgII-unsplash.jpg'
           alt='style'
         />
         <div className='coll-description'>
