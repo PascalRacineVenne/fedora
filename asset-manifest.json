@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fedora/static/css/main.aeef685b.css",
-    "main.js": "/fedora/static/js/main.9a9aaa8f.js",
+    "main.js": "/fedora/static/js/main.70d144ec.js",
     "static/media/allef-vinicius--eKbU_bOF9g-unsplash.jpg": "/fedora/static/media/allef-vinicius--eKbU_bOF9g-unsplash.764344b45db22452cbc6.jpg",
     "static/media/taylor-brandon-d-HOgxTgtZY-unsplash.jpg": "/fedora/static/media/taylor-brandon-d-HOgxTgtZY-unsplash.9e1a52da5011aae85e22.jpg",
     "static/media/Oi-Regular.ttf": "/fedora/static/media/Oi-Regular.7750edfb0d5d957f420e.ttf",
@@ -19,10 +19,10 @@
     "static/media/arrow.svg": "/fedora/static/media/arrow.d64bc6fc69e76737e587075315af88c6.svg",
     "static/media/menu.svg": "/fedora/static/media/menu.48e5c35132f930b1810bbf2f7257498c.svg",
     "main.aeef685b.css.map": "/fedora/static/css/main.aeef685b.css.map",
-    "main.9a9aaa8f.js.map": "/fedora/static/js/main.9a9aaa8f.js.map"
+    "main.70d144ec.js.map": "/fedora/static/js/main.70d144ec.js.map"
   },
   "entrypoints": [
     "static/css/main.aeef685b.css",
-    "static/js/main.9a9aaa8f.js"
+    "static/js/main.70d144ec.js"
   ]
 }
