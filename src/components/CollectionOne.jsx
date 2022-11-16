@@ -1,6 +1,10 @@
 import Button from './Button';
 import useElementOnScreen from '../utils/useElementOnScreen';
 
+import ImageOne from '../assets/images/jasmin-chew-IvqEWtgttXI-unsplash.jpg';
+import ImageTwo from '../assets/images/michael-c-zVycYmcblDY-unsplash.jpg';
+import ImageThree from '../assets/images/rayul-_M6gy9oHgII-unsplash.jpg';
+
 const CollectionOne = () => {
   const [containerRef, isVisible] = useElementOnScreen({
     root: null,
@@ -25,21 +29,21 @@ const CollectionOne = () => {
           className={
             isVisible ? 'essential fade-in appear' : 'essential fade-in'
           }
-          src='../assets/images/jasmin-chew-IvqEWtgttXI-unsplash.jpg'
+          src={ImageOne}
           alt='style'
         />
         <img
           className={
             isVisible ? 'essential fade-in appear' : 'essential fade-in'
           }
-          src='../assets/images/michael-c-zVycYmcblDY-unsplash.jpg'
+          src={ImageTwo}
           alt='style'
         />
         <img
           className={
             isVisible ? 'essential fade-in appear' : 'essential fade-in'
           }
-          src='../assets/images/rayul-_M6gy9oHgII-unsplash.jpg'
+          src={ImageThree}
           alt='style'
         />
         <div className='coll-description'>

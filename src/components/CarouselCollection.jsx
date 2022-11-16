@@ -2,6 +2,13 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import useElementOnScreen from '../utils/useElementOnScreen';
 
+import ImageOne from '../assets/images/manny-moreno-pidhWc7zHjA-unsplash.jpg';
+import ImageTwo from '../assets/images/josue-ladoo-pelegrin-s4UjZQYKjjc-unsplash.jpg';
+import ImageThree from '../assets/images/lino-ogenio-JP50-TUoRIA-unsplash.jpg';
+import ImageFour from '../assets/images/cassie-matias-GbiBqMnj6ds-unsplash.jpg';
+import ImageFive from '../assets/images/illiya-vjestica-qaCCuGcbJQU-unsplash.jpg';
+import ImageSix from '../assets/images/allef-vinicius-nMLjDDElgCw-unsplash.jpg';
+
 const CarouselCollection = () => {
   const [containerRef, isVisible] = useElementOnScreen({
     root: null,
@@ -74,30 +81,12 @@ const CarouselCollection = () => {
         slidesToSlide={1}
         swipeable={false}
       >
-        <img
-          src='../assets/images/manny-moreno-pidhWc7zHjA-unsplash.jpg'
-          alt='collection'
-        />
-        <img
-          src='../assets/images/josue-ladoo-pelegrin-s4UjZQYKjjc-unsplash.jpg'
-          alt='collection'
-        />
-        <img
-          src='../assets/images/lino-ogenio-JP50-TUoRIA-unsplash.jpg'
-          alt='collection'
-        />
-        <img
-          src='../assets/images/cassie-matias-GbiBqMnj6ds-unsplash.jpg'
-          alt='collection'
-        />
-        <img
-          src='../assets/images/illiya-vjestica-qaCCuGcbJQU-unsplash.jpg'
-          alt='collection'
-        />
-        <img
-          src='../assets/images/allef-vinicius-nMLjDDElgCw-unsplash.jpg'
-          alt='collection'
-        />
+        <img src={ImageOne} alt='collection' />
+        <img src={ImageTwo} alt='collection' />
+        <img src={ImageThree} alt='collection' />
+        <img src={ImageFour} alt='collection' />
+        <img src={ImageFive} alt='collection' />
+        <img src={ImageSix} alt='collection' />
       </Carousel>
     </div>
   );
