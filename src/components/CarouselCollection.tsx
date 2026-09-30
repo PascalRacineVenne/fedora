@@ -1,5 +1,4 @@
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import Carousel from './Carousel';
 import useElementOnScreen from '../utils/useElementOnScreen';
 
 import ImageOne from '../assets/images/manny-moreno-pidhWc7zHjA-unsplash.jpg';
@@ -16,33 +15,6 @@ const CarouselCollection = () => {
     rootMargin: '0px',
   });
 
-  const responsive = {
-    desktop: {
-      breakpoint: {
-        max: 3000,
-        min: 1024,
-      },
-      items: 4,
-      partialVisibilityGutter: 40,
-    },
-    mobile: {
-      breakpoint: {
-        max: 464,
-        min: 0,
-      },
-      items: 1,
-      partialVisibilityGutter: 30,
-    },
-    tablet: {
-      breakpoint: {
-        max: 1024,
-        min: 464,
-      },
-      items: 2,
-      partialVisibilityGutter: 30,
-    },
-  };
-
   return (
     <div ref={containerRef}>
       <Carousel
@@ -51,35 +23,9 @@ const CarouselCollection = () => {
             ? 'season-carousel fade-in appear'
             : 'season-carousel fade-in'
         }
-        additionalTransfrom={0}
-        // arrows
-        arrows={false}
-        autoPlay
-        autoPlaySpeed={2000}
-        centerMode={false}
-        containerClass='container-with-dots'
-        customTransition='all 2s linear'
-        dotListClass=''
+        slideClass='summer-img'
+        autoPlay={2000}
         draggable={false}
-        focusOnSelect={false}
-        infinite={true}
-        itemClass='summer-img'
-        keyBoardControl
-        minimumTouchDrag={80}
-        pauseOnHover
-        renderArrowsWhenDisabled={false}
-        renderButtonGroupOutside={false}
-        renderDotsOutside={false}
-        responsive={responsive}
-        rewind={false}
-        rewindWithAnimation={false}
-        rtl={false}
-        shouldResetAutoplay
-        // showDots
-
-        sliderClass=''
-        slidesToSlide={1}
-        swipeable={false}
       >
         <img src={ImageOne} alt='collection' />
         <img src={ImageTwo} alt='collection' />

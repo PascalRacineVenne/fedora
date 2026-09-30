@@ -1,10 +1,16 @@
-const Button = ({ name, draw, btnStyle }) => {
+type ButtonProps = {
+  name: string;
+  draw?: string;
+  btnStyle?: string;
+};
+
+const Button = ({ name, draw }: ButtonProps) => {
   return (
     <div>
       <a
         className={`btn ${draw ? draw : ''} btnStyle`}
         href='/#'
-        alt='shop now'
+        aria-label='shop now'
       >
         {name}
       </a>

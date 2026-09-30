@@ -1,6 +1,6 @@
 import cardExample from '../assets/images/nico-marks-7cvNasUbA_w-unsplash.jpg';
 
-const Card = ({ imgSrc, sku, name, price }) => {
+const Card = () => {
   return (
     <div className='card'>
       <div className='card-img'>

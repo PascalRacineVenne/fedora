@@ -55,18 +55,7 @@
   }
 }
 
-// .carousel {
-//   display: flex;
-//   justify-content: space-between;
-//   gap: 1rem;
-//   border: 3px solid goldenrod;
-// }
-
 .season-carousel {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: nowrap;
   img {
     object-fit: cover;
     // width: 300px;
@@ -79,10 +68,74 @@
   }
 }
 
-.summer-img {
-  margin: 4px;
-  width: 100%;
-  // img {
-  // border: 1px solid goldenrod;
-  // }
+
+// Embla carousel
+.carousel {
+  position: relative;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  @include devices(tablet) {
+    flex-basis: calc((100% - 1rem) / 2);
+  }
+  @include devices(desktop) {
+    flex-basis: calc((100% - 3rem) / 4);
+  }
+  &.card-slide {
+    @include devices(tablet) {
+      flex-basis: 100%;
+    }
+    @include devices(desktop) {
+      flex-basis: calc((100% - 3rem) / 4);
+    }
+  }
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+  }
+  &.prev {
+    left: 1rem;
+    &::before {
+      transform: translate(-30%, -50%) rotate(-45deg);
+    }
+  }
+  &.next {
+    right: 1rem;
+    &::before {
+      transform: translate(-70%, -50%) rotate(135deg);
+    }
+  }
 }

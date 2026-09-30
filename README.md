@@ -2,7 +2,7 @@
 
 This project was about taking an existing design and reproducing it using some specific tools.
 
-`React / Sass`
+`React / TypeScript / Vite / Sass`
 
 Access the project deployment with [Fedora](https://pascalracinevenne.github.io/fedora/).
 
@@ -20,7 +20,15 @@ For the moment there is no connection to a BACK-END to get specific information 
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run dev`
 
-Runs the app in the development mode.\
+Runs the app in development mode with Vite.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+### `npm run build`
+
+Type-checks the project and builds it for production into the `build` folder.
+
+### `npm run preview`
+
+Serves the production build locally.
