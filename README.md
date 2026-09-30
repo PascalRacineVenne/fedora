@@ -2,7 +2,7 @@
 
 This project was about taking an existing design and reproducing it using some specific tools.
 
-`React / TypeScript / Vite / Sass`
+`React / TypeScript / Vite / Ant Design / Linaria`
 
 Access the project deployment with [Fedora](https://pascalracinevenne.github.io/fedora/).
 

@@ -1,5 +1,18 @@
-import React from 'react';
+import { css } from '@linaria/core';
 import burgerMenu from '../assets/icons/menu.svg';
+import { desktop } from '../styles/media';
+
+const styles = {
+  button: css`
+    width: 28px;
+    padding: 0;
+    cursor: pointer;
+
+    ${desktop} {
+      display: none;
+    }
+  `,
+};
 
 type BurgerMenuProps = {
   menuOpen: boolean;
@@ -15,7 +28,7 @@ const BurgerMenu = ({ menuOpen, setMenuOpen }: BurgerMenuProps) => {
       onClick={handleClick}
       src={burgerMenu}
       alt='burger'
-      className='menu-btn'
+      className={styles.button}
     />
   );
 };

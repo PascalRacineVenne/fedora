@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/cssinjs": "^2.1.2",
+    "@linaria/core": "^8.2.0",
+    "antd": "^6.6.5",
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "react": "^19.3.0",
@@ -19,7 +22,7 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.1",
-    "sass": "^1.105.1",
+    "@wyw-in-js/vite": "^2.5.1",
     "typescript": "^7.0.2",
     "vite": "^8.3.1"
   }
