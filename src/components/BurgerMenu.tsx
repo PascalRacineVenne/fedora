@@ -1,7 +1,12 @@
 import React from 'react';
 import burgerMenu from '../assets/icons/menu.svg';
 
-const BurgerMenu = ({ menuOpen, setMenuOpen }) => {
+type BurgerMenuProps = {
+  menuOpen: boolean;
+  setMenuOpen: (open: boolean) => void;
+};
+
+const BurgerMenu = ({ menuOpen, setMenuOpen }: BurgerMenuProps) => {
   const handleClick = () => {
     setMenuOpen(!menuOpen);
   };

@@ -6,12 +6,12 @@ const Menu = () => {
       <nav>
         <ul>
           <li>
-            <a href='/#' alt='account'>
+            <a href='/#' aria-label='account'>
               My Account
             </a>
           </li>
           <li>
-            <a href='/#' alt='cart'>
+            <a href='/#' aria-label='cart'>
               Cart (0)
             </a>
           </li>
