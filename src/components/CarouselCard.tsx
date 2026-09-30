@@ -1,7 +1,29 @@
+import { css, cx } from '@linaria/core';
+import { Flex } from 'antd';
 import Carousel from './Carousel';
 import useElementOnScreen from '../utils/useElementOnScreen';
 import Button from './Button';
 import Card from './Card';
+import { animations } from '../styles/animations';
+import { desktop, tablet } from '../styles/media';
+
+const styles = {
+  container: css`
+    margin: 1.5rem 1rem;
+  `,
+  slide: css`
+    ${tablet} {
+      flex-basis: 100%;
+    }
+
+    ${desktop} {
+      flex-basis: calc((100% - 3rem) / 4);
+    }
+  `,
+  btnCenter: css`
+    margin: 4rem 0;
+  `,
+};
 
 const CarouselCard = () => {
   const [containerRef, isVisible] = useElementOnScreen({
@@ -11,11 +33,11 @@ const CarouselCard = () => {
   });
 
   return (
-    <div className='carousel-container' ref={containerRef}>
+    <div className={styles.container} ref={containerRef}>
       <Carousel
         arrows
-        className={isVisible ? 'fade-in appear' : 'fade-in'}
-        slideClass='card-slide'
+        className={cx(animations.fadeIn, isVisible && animations.fadeInAppear)}
+        slideClassName={styles.slide}
       >
         <Card />
         <Card />
@@ -25,9 +47,9 @@ const CarouselCard = () => {
         <Card />
         <Card />
       </Carousel>
-      <div className='btn-center'>
-        <Button name={'See All'} draw={'draw-border'} />
-      </div>
+      <Flex justify='center' align='center' className={styles.btnCenter}>
+        <Button name={'See All'} draw />
+      </Flex>
     </div>
   );
 };
